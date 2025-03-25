@@ -66,7 +66,7 @@ main .text-container h1 {
 }
 
 .text-container {
-    padding: 2rem;
+    padding: 0rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,19 +84,42 @@ main .text-container h1 {
     margin: 1rem 0rem;
 }
 
-button {
-    border-radius: 45%;
-    width: 75px;
+.user-submit-wrapper {
+    border: 1px solid var(--pri-desaturated-red);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#user-in-email {
+    background: transparent;
+    border: none;
     height: 50px;
 }
 
-input {
-    border: 2px solid red;
+#user-in-email:placeholder-shown {
+    margin: 0rem 1rem;
+    width: 100%;
+}
+
+#user-in-email {
+    outline: none;
+}
+
+button {
     height: 50px;
+    width: 65px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0.375rem 0.375rem 1rem var(--pri-desaturated-red);
+    background: linear-gradient(to right, var(--linGrad-2-1), var(--linGrad-2-2));
 }
 
 footer {
-    border: 2px solid purple;
+    display: none;
     position: absolute;
     bottom: 0;
 }
