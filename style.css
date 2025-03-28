@@ -22,6 +22,8 @@ html, body {
 body {
     font-size: 16px;
     position: relative;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 header {
@@ -53,16 +55,16 @@ main {
 }
 
 main .text-container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 450;
-    margin: 1.25rem auto 1rem;
-    letter-spacing: 6px;
+    font-weight: 400;
+    margin: 3.5rem auto 1rem;
+    letter-spacing: 10px;
 }
 
 .text-container {
@@ -74,14 +76,17 @@ main .text-container h1 {
 
 .text-container h1 span {
     color: var(--pri-desaturated-red);
+    font-weight: 300;
 }
 
 .text-container p {
     line-height: 1.5;
     text-align: center;
-    font-size: 0.8rem;
-    margin: 0.25rem 0rem 1rem;
-    max-width: 250px;
+    font-size: 0.9rem;
+    margin: 0.25rem 0rem 2rem;
+    max-width: 315px;
+    font-weight: 400;
+    color: var(--pri-desaturated-red);
 }
 
 .user-submit-wrapper {
@@ -99,6 +104,10 @@ main .text-container h1 {
     outline: none;
     border: none;
     background: transparent;
+}
+
+#user-in-email::placeholder {
+    color: var(--pri-desaturated-red);
 }
 
 button {
@@ -129,11 +138,12 @@ footer {
     color: hsl(228, 45%, 44%); 
 }
 
-/* Generic non-viewport dependent styling */
+/* Tablet: 481px - 768px */
+@media only screen and (min-width: 481px) {}
 
-/* Mobile only styling */
+/* Small Desktop: 769px - 1024px  */
+@media only screen and (min-width:769px) {}
 
-/* Desktop only styling */
-/* Use media query...this will pop after it reaches 426px wide. */
-@media only screen and (min-width: 426px){}
+/*  Large Desktop: 1025px+ */
+@media only screen and (min-width:1025px) {}
 
