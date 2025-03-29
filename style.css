@@ -31,7 +31,7 @@ main {
 }
 
 .logo {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .logo img {
@@ -55,7 +55,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    margin: 2.5rem 0rem 0rem;
 }
 
 .text-container h1 {
@@ -77,9 +77,9 @@ main {
 }
 
 .text-container p {
-    font-size: 0.625rem;
+    font-size: 0.8rem;
     text-align: center;
-    max-width: 220px;
+    max-width: 275px;
     color: var(--pri-desaturated-red);
     margin: 1rem 0rem;
     line-height: 1.5;
