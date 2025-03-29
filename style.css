@@ -22,6 +22,7 @@ html, body {
 body {
     font-family: "Josefin Sans", sans-serif;
     font-optical-sizing: auto;
+    background-color: var(--linGrad-1-2);
 }
 
 main {
@@ -98,11 +99,20 @@ main {
     padding: 0rem 1rem;
 }
 
+#user-in-email::placeholder {
+    color: var(--pri-desaturated-red);
+}
+
+
 .user-submit-wrapper button {
     height: 50px;
-    width: 60px;
+    width: 65px;
     border: none;
     border-radius: 2rem;
+}
+
+button {
+    background-color: var(--linGrad-2-1);
 }
 
 
