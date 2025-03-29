@@ -56,7 +56,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2.5rem 0rem 0rem;
+    margin: 2.75rem 0rem 0rem;
 }
 
 .text-container h1 {
@@ -68,7 +68,7 @@ main {
     letter-spacing: 6px;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 1.125;
+    line-height: 1.25;
 }
 
 .text-container span {
@@ -82,12 +82,12 @@ main {
     text-align: center;
     max-width: 275px;
     color: var(--pri-desaturated-red);
-    margin: 1rem 0rem;
+    margin: 1rem 0rem 2rem;
     line-height: 1.5;
 }
 
 .user-submit-wrapper {
-    border: 1px solid var(--pri-desaturated-red);
+    border: 1px solid var(--linGrad-2-1);
     border-radius: 2rem;
     display: flex;
 }
@@ -97,10 +97,11 @@ main {
     border: none;
     background: transparent;
     padding: 0rem 1rem;
+    outline: none;
 }
 
 #user-in-email::placeholder {
-    color: var(--pri-desaturated-red);
+    color: var(--linGrad-2-1);
 }
 
 
@@ -112,7 +113,8 @@ main {
 }
 
 button {
-    background-color: var(--linGrad-2-1);
+    background: linear-gradient(135deg, var(--linGrad-2-1), var(--linGrad-2-2));
+    box-shadow: 0.25rem 0.5rem 0.75rem var(--linGrad-2-1);
 }
 
 
